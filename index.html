@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Software Issue Labeler</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-69945343-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-69945343-1');
+</script>
+
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">Accessibility Labeler</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#video">Illustrative Video</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#set-up">Set up</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Survey</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead" id="video">
+            <div class="container">
+                <div class="masthead-heading">Welcome!</div>
+                <!-- <div class="masthead-subheading text-uppercase">Illustrative Video</div> -->
+                <!-- <iframe width="68%" height="500rem" src="https://www.youtube.com/embed/mi2FwaXNrR4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                <br>
+                <br>
+                <br>
+
+                <!-- <a class="btn btn-primary btn-xl text-uppercase mt-5" href="#about">About The Tool</a> -->
+            </div>
+        </header>
+
+        <!-- About Grid-->
+        <section class="page-section bg-light" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">About</h2>
+                    <h3 class="section-subheading text-muted">Accessibility Bug Reports Labeler is a Jira plugin that utilizes a language model to automatically label issue reports as either accessibility-related or not. The plugin was developed by fine-tuning Google's pre-trained ALBERT model on 7,096 manually labeled issues, achieving 95% F1-score, recall, and precision during testing. When installed in Jira, the plugin analyzes the title and description of new issues and applies a label indicating if it is an accessibility report or not. This saves time for developers by automatically categorizing incoming issues and helping prioritize accessibility defects. The high accuracy of the model results from training it on a substantially labeled dataset. The plugin consists of three parts: the classification model, APIs, and Jira Plugin.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid w-75" src="assets/img/portfolio/1.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Issue Labeler Model</div>
+                                <div class="portfolio-caption-subheading text-muted">Google ALBERT model</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                         <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid w-75" src="assets/img/portfolio/2.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Issue Labeler Jira Plugin</div>
+                                <div class="portfolio-caption-subheading text-muted">Jira plugin</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" href="#">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid w-75" src="assets/img/portfolio/3.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Open Source</div>
+                                <div class="portfolio-caption-subheading text-muted">GitHub repository</div>
+                            </div>
+                        </div>
+                    </div>
+
+        </section>         
+        
+        <!-- Set up-->
+        <section class="page-section" id="set-up">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Set up</h2>
+                    <h3 class="section-subheading text-muted">The following are the steps to set up the plugin.</h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image "><img class="rounded-circle img-fluid" src="assets/img/about/2.png" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Step 1</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Copy the plugin installation link<br><a href="https://accessibility-labeler-plugin.onrender.com/install" style="color: blue;">https://accessibility-labeler-plugin.onrender.com/install</a></p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Step 2</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Sign in to your Jira account and navigate to the "Manage Apps" setting found under "Apps" at the top of your dashboard<br><br>
+                                Note: Be sure to enable development mode for your Jira instance by toggling the option under Manage Apps > Settings > Enable Development Mode </p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Step 3</h4>
+                            </div>
+                            <div class="timeline-body text-left"><p class="text-muted">- Click on "Upload App" and paste the URL into it.<br>
+                                - Click on "Upload App" and paste the URL into it and click "Upload"</p></div>
+                        </div>
+                    </li>
+                    <!-- <li class="timeline-inverted" >
+                        <div class="timeline-image" style="background-color: rgb(58, 154, 225);">
+                            <h4>
+                                Plugin
+                                <br />
+                                is now
+                                <br />
+                                ready!
+                            </h4>
+                        </div>
+                    </li> -->
+
+                </ul>
+            </div>
+        </section>
+
+        <!-- Team-->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/1.png" alt="..." />
+                            <h4>Mohamed Almukhtar</h4>
+                            <p class="text-muted">Lead Developer</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/mohamed-almukhtar/" target="_blank" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
+                            <h4>Dr. Wajdi Aljedaani</h4>
+                            <p class="text-muted">Advisor</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/wajdi-aljedaani-9a8965260" target="_blank" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/4.jpg" alt="..." />
+                            <h4>Dr. Mohamed Wiem Mkaouer</h4>
+                            <p class="text-muted">Co-Advisor</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/mkaouer/" target="_blank" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/5.jpg" alt="..." />
+                            <h4>Oakland University</h4>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/6.jpg" alt="..." />
+                            <h4>Rochester Institute of Technology</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </section>
+
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Help us improve!</h2>
+                    <h3 class="section-subheading" style="color:white">Please give us your feedback.</h3>
+                    <a class="btn btn-primary btn-xl text-uppercase mt-5" target="_blank" href="https://forms.gle/av2VxdY4dozyVK1w9">Take the survey</a>
+                </div>
+
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; Oakland.edu 2023</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <div class="col-lg-4 text-lg-start d-inline">Contact us at: <a class="link-info md font-weight-bold" href="mailto: CHANGEME@gmail.com">CHANGEME@gmail.com</a></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Issue Labeler Model</h2>
+                                    <img class="img-fluid d-block mx-auto w-25" src="assets/img/portfolio/1.jpg" alt="..." />
+                                    <p class="h5 text-muted" style="text-align: left;">The plugin’s prediction engine is an accessibility-classification deep-learning language model implemented by fine-tuning Google’s 
+                                        pre-trained ALBERT language model. Introduced by Google in 2019, ALBERT, which stands for A Lite BERT, 
+                                        is a smaller version of the original BERT language model. ALBERT achieves a smaller size due to the factorization of BERT’s embedding 
+                                        parameters leading to an “80% reduction in the parameters of the projection block, at the expense of only a minor drop in performance” (<a href="https://ai.googleblog.com/2019/12/albert-lite-bert-for-self-supervised.html" style="color:blue">https://ai.googleblog.com/2019/12/albert-lite-bert-for-self-supervised.html</a>)</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Issue Labeler Jira Plugin</h2>
+                                    <img class="img-fluid d-block mx-auto w-25" src="assets/img/portfolio/2.jpg" alt="..." />
+                                    <p class="h5 text-muted" style="text-align: left;">This Jira plugin is an extension of the accessibility labeler model. It is installable into Jira Cloud instances and is viewable in an issue's page. The plugin will passively analyze an issue's title and description by communicating with the issue labeler model and display prediction types ranked by their confidence score.</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
